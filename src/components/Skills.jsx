@@ -1,5 +1,4 @@
 import React, { Component, useContext } from 'react'
-import { Bero } from './MainPage'
 
 export default class Skills extends Component {
  

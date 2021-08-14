@@ -2,12 +2,12 @@ import ReactDOM from 'react-dom';
 
 import React, { useState } from 'react';
 import './index.css';
-import Basic from './components/Basic';
-import MainPage from './components/MainPage';
+import Basic from './pages/Basic';
+import MainPage from './pages/MainPage';
 
 ReactDOM.render(
   <React.StrictMode>
-    <div>
+    <div className="">
     <MainPage/>
     </div>
     

@@ -1,4 +1,5 @@
 import React, { useEffect, useContext, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { getTTFB } from 'web-vitals'
 import { dataRepos, fetchTasks } from "../Github/fetchRepo"
 const Repos = () => {
@@ -23,22 +24,25 @@ const Repos = () => {
       <div className="w3-container">
         { state ? state.map((data,i)=>(<RepoFrame key={i} data={data}/>)): console.log("fail load git")}
       </div>
+      <br />
     </div>
   )
 }
 export default Repos
 
 function RepoFrame({data}) {
-
-
+  // const divclick=()=>{location.href = "https://www.google.com/"}
+  
   return ( 
-             
-  <div className="w3-container">
+            
+  
+  <div className="w3-container" >
     <hr/>
-  <h5 className="w3-opacity"><b>{data.name}</b></h5>
+  <h5 className="w3-opacity" ><a href={data.html_url}>{data.name}</a></h5>
   <h6 className="w3-text-teal"><i className="fa fa-calendar fa-fw w3-margin-right"></i>{data.created_at}</h6>
-  <p>{data.description}</p>
+  <a>{data.description}</a>
   
   </div>
+
   )
 }

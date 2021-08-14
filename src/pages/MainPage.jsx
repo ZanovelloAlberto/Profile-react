@@ -1,10 +1,10 @@
 import { Component } from 'react'
 import { useContext } from 'react';
-import Footer from './Footer'
-import SideBar from './SideBar'
+import Footer from '../components/Footer'
+import SideBar from '../components/SideBar'
 import { useState, useEffect } from 'react'
 import  { dataRepos }  from "../Github/fetchRepo"
-import Repos from './Repos';
+import Repos from '../components/Repos';
 import React,{ createContext } from 'react'
 import { GetRepo } from '../Github/fetchRepo';
 import { fetchTasks } from '../Github/fetchRepo';
