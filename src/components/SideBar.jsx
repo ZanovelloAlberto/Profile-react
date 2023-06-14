@@ -16,7 +16,7 @@ export default class SideBar extends Component {
       <div className="w3-third">
         <div className="w3-white w3-text-grey w3-card-4">
           <div className="w3-display-container">
-            <img src="https://raw.githubusercontent.com/ZanovelloAlberto/ZanovelloAlberto/main/pic/beach.png" style={{ width: "100%" }} alt="Avatar" />
+            <img src="https://raw.githubusercontent.com/ZanovelloAlberto/ZanovelloAlberto/main/pic/sand.png" style={{ width: "100%" }} alt="Avatar" />
             <div className="w3-display-bottomleft w3-container w3-text-white">
               <h2>Alberto</h2>
             </div>
